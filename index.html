@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora+</title>
+  <link rel="icon" type="image/png" href="./img/logo head.png">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./main.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <img src="./img/logo head.png" alt="Aurora+" height="35px">
+    <button class="btn-entrar">ENTRAR</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero_content">
+
+      <!-- Bloco centralizado -->
+      <div class="hero_header">
+        <h1 class="hero_logo">
+          <img src="./img/aurora white b.png" alt="Aurora+">
+        </h1>
+        <p class="hero_subtitle">Um universo de histórias, em um só clique</p>
+        <div class="hero_prices">
+          <a href="#" class="link-assinar">Assinar o Aurora+</a>
+          <p>R$ 29,90/mês ou R$ 299,90/ano à vista*</p>
+        </div>
+      </div>
+
+      <!-- Botões -->
+      <div class="hero_buttons">
+        <div class="card-combo">
+          <img src="./img/COMBO+.png" alt="Aurora+ Disney+ Combo" class="combomais" height="100px">
+          <button class="btn">ASSINE AGORA</button>
+          <h4 class="legenda-btn">R$48,90/mês*</h4>
+        </div>
+        <div class="card-combo">
+          <img src="./img/SEGUNDO COMBO + NETFLIX.png" alt="Disney+ Aurora+ Netflix" class="correcao-altura" height="40px">
+          <button class="btn">ASSINE AGORA</button>
+          <h4 class="legenda-btn">R$62,90/mês*  </h4>
+        </div>
+      </div>
+
+      <p class="disclaimer">*O preço pode variar caso a assinatura seja feita através de outras plataformas.</p>
+
+    </div>
+  </section>
+  <section class="catalogo">
+    <p class="catalogo_titulo">Catálogo Aurora+</p>
+
+    <div class="catalogo_tabs">
+      <button class="tab ativo" data-tab="breve">EM BREVE</button>
+      <button class="tab" data-tab="populares">MAIS POPULARES</button>
+      <button class="tab" data-tab="destaques">DESTAQUES</button>
+    </div>
+
+    <!-- EM BREVE -->
+    <div class="catalogo_grid" id="breve">
+      <div class="catalogo_item">
+        <img src="./img/images/catalogo/Em-breve/ODS.jpg" alt="Destaque">
+        <span class="catalogo_label">DESTAQUE DA SEMANA</span>
+      </div>
+      <div class="catalogo_item">
+        <img src="./img/images/catalogo/Em-breve/elio.jpg" alt="Filme 2">
+        <span class="catalogo_label">NOVO - ELIO</span>
+      </div>
+      <div class="catalogo_item">
+        <img src="./img/images/catalogo/Em-breve/threebodyproblem.jpg" alt="Filme 3">
+        <span class="catalogo_label">EM BREVE -  O PROBLEMA DOS 3 CORPOS</span>
+      </div>
+      <div class="catalogo_item">
+        <img src="./img/images/catalogo/Em-breve/ENTRE MONTANHAS.jpg" alt="Filme 4">
+        <span class="catalogo_label">POPULAR - ENTRE MONTANHAS</span>
+      </div>
+      <div class="catalogo_item">
+        <img src="./img/images/catalogo/Em-breve/dune-movie.jpg" alt="Filme 5">
+        <span class="catalogo_label">EXCLUSIVO - DUNE III</span>
+      </div>
+    </div>
+    <!-- + POPULARES -->
+      <div class="catalogo_grid escondido" id="populares">
+        <div class="catalogo_item">
+          <img src="./img/images/catalogo/Mais-Populares/belair.jpg">
+          <span class="catalogo_label">TOP 1</span>
+        </div>
+
+        <div class="catalogo_item">
+          <img src="./img/images/catalogo/Mais-Populares/libertadores.jpg">
+          <span class="catalogo_label">MAIS VISTO</span>
+        </div>
+
+        <div class="catalogo_item">
+          <img src="./img/images/catalogo/Mais-Populares/nba.jpg">
+          <span class="catalogo_label">POPULAR</span>
+        </div>
+
+        <div class="catalogo_item">
+          <img src="./img/images/catalogo/Mais-Populares/os_simpson.jpg">
+          <span class="catalogo_label">TRENDING</span>
+        </div>
+
+        <div class="catalogo_item">
+          <img src="./img/images/catalogo/Mais-Populares/premier_league.jpg">
+          <span class="catalogo_label">EM ALTA</span>
+        </div>
+      </div>
+      <!-- DESTAQUEES -->
+      <div class="catalogo_grid escondido" id="destaques">
+        <div class="catalogo_item">
+          <img src="./img/images/catalogo/Destaques/bluey.jpg">
+          <span class="catalogo_label">DESTAQUE</span>
+        </div>
+
+        <div class="catalogo_item">
+          <img src="./img/images/catalogo/Destaques/cavaleira_da_lua.jpg">
+          <span class="catalogo_label">EXCLUSIVO</span>
+        </div>
+
+        <div class="catalogo_item">
+          <img src="./img/images/catalogo/Destaques/o_incrivel_dr_pol.jpg">
+          <span class="catalogo_label">PREMIADO</span>
+        </div>
+
+        <div class="catalogo_item">
+          <img src="./img/images/catalogo/Destaques/obi_wan.jpg">
+          <span class="catalogo_label">RECOMENDADO</span>
+        </div>
+
+        <div class="catalogo_item">
+          <img src="./img/images/catalogo/Destaques/red.jpg">
+          <span class="catalogo_label">TOP</span>
+        </div>
+      </div>
+  </section>
+  <!-- Planos do Auroraa+ -->
+  <section class="planos">
+    <h2 class="planos_titulo">Escolha seu plano</h2>
+
+    <div class="planos_grid">
+      <div class="plano_card">
+        <img src="./img/aurora white b.png" alt="Aurora+" class="plano_logo">
+        <h3>R$ 29,90/mês*</h3>
+        <p>
+          No Aurora+ você encontra as últimas estreias do cinema,
+          originais e clássicos inesquecíveis.
+        </p>
+        <button class="plano_btn">ASSINE AGORA</button>
+      </div>
+
+      <div class="plano_card destaque">
+        <span class="tag_popular">MAIS POPULAR</span>
+        <img src="./img/COMBO+.png" alt="Combo+" class="plano_logo_combomais">
+        <h3>R$ 48,90/mês*</h3>
+        <p>
+          Assine Disney+ e Star+ juntos. Economize e aproveite agora
+          os dois serviços por um preço único.
+        </p>
+        <button class="plano_btn">ASSINE AGORA</button>
+      </div>
+
+      <div class="plano_card">
+        <img src="./img/SEGUNDO COMBO + NETFLIX.png" alt="Disney+ Aurora+ Netflix" class="plano_logo_dan">
+        <h3>R$ 62,90/mês*</h3>
+        <p>
+          Disney+, Aurora+ e Netflix em um plano especial.
+          Assine agora os três serviços juntos.
+        </p>
+        <button class="plano_btn">ASSINE AGORA</button>
+      </div>
+    </div>
+  </section>
+  <!-- Section do Download do rei Leao -->
+  <section class="download">
+    <img src="./img/images/fundo_rei_leao.png" class="download_img" alt="O Rei Leão">
+
+    <div class="download_texto">
+      <h2>Baixe filmes e séries na Disney+</h2>
+      <p>
+        Baixe e assista quando e onde quiser. Assim, seus favoritos
+        estão sempre com você, até mesmo sem internet.
+      </p>
+    </div>
+  </section>
+
+<!-- DISPOSITIVOS COMPATIVEIIS COM O AURORA -->
+  <section class="dispositivos">
+    <h2 class="dispositivos_titulo">Disponível nos seus dispositivos favoritos</h2>
+
+    <div class="dispositivos_grid">
+      <div class="dispositivo_card">
+        <img src="./img/images/dispositivos/computador.png" alt="Computador">
+        <h3>Computador</h3>
+        <p>Chrome OS</p>
+        <p>MacOS</p>
+        <p>PC Windows</p>
+      </div>
+
+      <div class="dispositivo_card">
+        <img src="./img/images/dispositivos/tv.png" alt="TV">
+        <h3>TV</h3>
+        <p>Amazon Fire TV</p>
+        <p>Samsung</p>
+        <p>LG</p>
+        <p>Roku</p>
+        <p>Android TV</p>
+        <p>Apple TV</p>
+        <p>Chromecast</p>
+      </div>
+
+      <div class="dispositivo_card">
+        <img src="./img/images/dispositivos/celular.png" alt="Celular">
+        <h3>Celulares</h3>
+        <p>Tablets Amazon Fire</p>
+        <p>Celulares e Tablets Android</p>
+        <p>Iphone e iPad</p>
+      </div>
+
+      <div class="dispositivo_card">
+        <img src="./img/images/dispositivos/videogames.png" alt="Videogames">
+        <h3>Videogames</h3>
+        <p>PS5</p>
+        <p>PS4</p>
+        <p>Xbox One</p>
+        <p>Xbox Series S</p>
+        <p>Xbox Series X</p>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ - Bora lá testar isso kkk -->
+  <section class="faq">
+    <h2 class="faq_titulo">Perguntas frequentes</h2>
+
+    <div class="faq_item">
+      <button class="faq_pergunta">
+        O que é o Aurora+?
+        <span class="faq_icone">+</span>
+      </button>
+      <div class="faq_resposta">
+        <p>
+          O Aurora+ é uma plataforma de streaming com filmes, séries,
+          documentários e conteúdos exclusivos.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq_item">
+      <button class="faq_pergunta">
+        Quanto custa assinar?
+        <span class="faq_icone">+</span>
+      </button>
+      <div class="faq_resposta">
+        <p>
+          Os valores podem variar conforme o plano escolhido e promoções disponíveis.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq_item">
+      <button class="faq_pergunta">
+        Posso assistir offline?
+        <span class="faq_icone">+</span>
+      </button>
+      <div class="faq_resposta">
+        <p>
+          Sim. Você pode baixar conteúdos compatíveis e assistir sem internet.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq_item">
+      <button class="faq_pergunta">
+        Em quais dispositivos funciona?
+        <span class="faq_icone">+</span>
+      </button>
+      <div class="faq_resposta">
+        <p>
+          Funciona em computador, celular, tablet, Smart TV e outros dispositivos compatíveis.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTEER -->
+  <footer class="footer">
+    <div class="footer_logo">
+      <img src="./img/aurora white b.png" alt="Aurora+">
+    </div>
+
+    <div class="footer_links">
+      <a href="#">Português</a>
+      <a href="#">Termos e Condições de Uso</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Proteção de Dados</a>
+      <a href="#">Anúncios Personalizados</a>
+      <a href="#">Dispositivos Compatíveis</a>
+      <a href="#">Ajuda</a>
+      <a href="#">Sobre o Aurora+</a>
+    </div>
+
+    <div class="footer_redes">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="X">X</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
+    </div>
+
+    <p class="footer_copy">
+      © 2026 Aurora+. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito à disponibilidade.
+    </p>
+
+    <p class="footer_info">
+      Aurora+ é um serviço pago, baseado em assinatura e sujeito a termos e condições.
+      O serviço é comercializado no Brasil por Aurora Streaming Ltda.
+    </p>
+  </footer>
+</body>
+</html>

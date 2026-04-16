@@ -1,0 +1,964 @@
+/* Resete */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variaeis */
+:root {
+  --cor-de-fundo: #0d1a2d;
+  --cor-texto: #ffffff;
+  --cor-destaque: #2d6a8f;
+}
+
+/* body */
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-texto);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ─── Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background: linear-gradient(to bottom, rgba(13, 26, 45, 0.95), transparent);
+  z-index: 100;
+}
+
+.btn-entrar {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-entrar:hover {
+  background: var(--cor-destaque);
+  border-color: var(--cor-destaque);
+  transform: scale(1.05);
+}
+
+.btn-entrar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: all 0.6s;
+}
+
+.btn-entrar:hover::after {
+  left: 100%;
+}
+
+/* ─── Hero */
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 6rem;
+  background-image:
+    linear-gradient(to right,
+      rgba(13, 26, 45, 1) 30%,
+      rgba(13, 26, 45, 0.6) 55%,
+      rgba(13, 26, 45, 0.1) 100%),
+    url('../img/images/hero_desktop.jpeg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+/* ─── Header centralizado */
+.hero_header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero_logo img {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.hero_subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-style: italic;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+/* ─── Prices */
+.hero_prices {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.link-assinar {
+  color: var(--cor-texto);
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.link-assinar:hover {
+  opacity: 0.7;
+}
+
+/* ─── Botoees */
+.hero_buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-combo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 18rem;
+  min-height: 50px;
+  background-color: transparent;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--cor-destaque);
+  color: var(--cor-texto);
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  font-weight: 700;
+  margin-top: auto;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background-color: var(--cor-texto);
+  color: var(--cor-de-fundo);
+  transform: scale(1.03);
+}
+
+.combomais {
+  margin-bottom: 20px;
+}
+
+.correcao-altura {
+  margin-top: 35px;
+}
+
+.legenda-btn {
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* ─── Disclaimer */
+.disclaimer {
+  font-size: 0.7rem;
+  opacity: 0.45;
+  margin-top: 0.5rem;
+}
+
+
+
+
+
+
+
+
+/* ─── Catálogo */
+
+.catalogo {
+  background-color: var(--cor-de-fundo);
+  padding: 4rem;
+}
+
+.catalogo_titulo {
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  opacity: 0.4;
+  margin-bottom: 1.5rem;
+}
+
+/* Abas — pílulas */
+.catalogo_tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.tab {
+  background: var(--cor-destaque);
+  border: none;
+  color: var(--cor-de-fundo);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 0.5rem 1.4rem;
+  border-radius: 10px;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  opacity: 0.85;
+  background: var(--cor-texto);
+}
+
+.tab.ativo {
+  opacity: 1;
+  background: var(--cor-texto);
+  color: var(--cor-de-fundo);
+}
+
+/* Grid assimétrico */
+.catalogo_grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.6rem;
+}
+
+/* Card grande ocupa 2 linhas */
+.catalogo_item:first-child {
+  grid-row: span 2;
+}
+
+/* Cards */
+.catalogo_item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  aspect-ratio: 16/9;
+}
+
+.catalogo_item:first-child {
+  aspect-ratio: unset;
+}
+
+.catalogo_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Overlay com título */
+.catalogo_item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26, 43, 68, 0.863) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.catalogo_item:hover::after {
+  opacity: 1;
+}
+
+.catalogo_item:hover img {
+  transform: scale(1.06);
+}
+
+/* Glow no hover */
+.catalogo_item:hover {
+  box-shadow: 0 0 20px rgba(21, 35, 63, 0.514);
+}
+
+/* Label do card */
+.catalogo_label {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: all 0.4s ease;
+}
+
+.catalogo_item:hover .catalogo_label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.catalogo_grid {
+  display: grid;
+}
+
+.escondido {
+  display: none;
+}
+
+/* Planos do AURORA+ */
+
+.planos {
+  background: #040b1c00;
+  color: white;
+  padding: 10rem 10rem;
+  text-align: center;
+}
+
+.planos_titulo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.planos_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  align-items: stretch;
+}
+
+.plano_card {
+  position: relative;
+  background: linear-gradient(180deg, var(--cor-destaque) 10%, var(--cor-de-fundo) 80%);
+  border: 3px solid var(--cor-de-fundo);
+  border-radius: 5px;
+  padding: 2rem 1.5rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s ease;
+}
+
+.plano_card:hover {
+  box-shadow: 0 0 20px var(--cor-de-fundo);
+}
+
+.plano_card.destaque {
+  transform: translateY(-11px);
+  border: 2px solid var(--cor-de-fundo);
+}
+
+.tag_popular {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--cor-de-fundo);
+  color: var(--cor-texto);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.45rem 0.9rem;
+  border-radius: 1px 0 8px 0;
+  letter-spacing: 4px;
+}
+
+.plano_logo {
+  max-width: 180px;
+  max-height: 60px;
+  object-fit: contain;
+  margin: 2rem auto 1.5rem;
+}
+
+.plano_logo_dan {
+  max-width: 340px;
+  max-height: 60px;
+  object-fit: contain;
+  margin: 1rem auto 1.5rem;
+}
+
+.plano_logo_combomais {
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+  margin: 1rem auto 1.5rem;
+}
+
+.plano_card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.plano_card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.plano_btn {
+  background: linear-gradient(10deg, var(--cor-destaque));
+  color: white;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.plano_btn:hover {
+  opacity: 0.75;
+}
+
+/* - ------------------PARTE DE DOWNLOAD DO REI LEAO ------------------------- */
+
+.download {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem 6rem;
+  background: #04071434;
+  color: white;
+}
+
+.download_img {
+  width: 1000px;
+  max-width: 100%;
+  display: block;
+}
+
+.download_texto {
+  max-width: 420px;
+}
+
+.download_texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.download_texto p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* DISPOSITIVOS COMPATIVEIS */
+
+.dispositivos {
+  background: var(--cor-de-fundo);
+  color: var(--cor-texto);
+  text-align: center;
+  padding: 5rem 3rem;
+}
+
+.dispositivos_titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 6rem;
+}
+
+.dispositivos_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.dispositivo_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dispositivo_card img {
+  width: 280px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.dispositivo_card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.dispositivo_card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+/* FAQ - fazendo a primeira vez, bora lá */
+
+.faq {
+  background: #040714;
+  color: white;
+  padding: 5rem 3rem;
+}
+
+.faq_titulo {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.faq_item {
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+  background: #13151d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq_pergunta {
+  width: 100%;
+  background: var(--cor-destaque);
+  color: var(--cor-texto);
+  border: none;
+  padding: 1.4rem 1.5rem;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq_icone {
+  font-size: 1.8rem;
+  font-weight: 400;
+  transition: transform 0.3s ease;
+}
+
+.faq_resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  background: #1a1c24;
+}
+
+.faq_resposta p {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.faq_item.ativo .faq_resposta {
+  max-height: 200px;
+}
+
+.faq_item.ativo .faq_icone {
+  transform: rotate(45deg);
+}
+
+/* FOOTER */
+
+.footer {
+  background: #040714;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  padding: 4rem 2rem 3rem;
+}
+
+.footer_logo img {
+  width: 230px;
+  margin-bottom: 4.5rem;
+  opacity: 0.95;
+}
+
+.footer_links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer_links a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: opacity 0.3s ease;
+}
+
+.footer_links a:hover {
+  opacity: 1;
+  color: white;
+}
+
+.footer_redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.footer_redes a {
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.footer_redes a:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.35);
+}
+
+.footer_copy,
+.footer_info {
+  max-width: 900px;
+  margin: 0 auto 0.8rem;
+  font-size: 0.72rem;
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+/* RESPONSIVIDADE */
+
+/* =========================
+   RESPONSIVIDADE APENAS
+   ========================= */
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .hero {
+    padding: 2rem 3rem;
+    background-position: center right;
+  }
+
+  .hero_buttons {
+    gap: 1.5rem;
+  }
+
+  .catalogo {
+    padding: 3rem 2rem;
+  }
+
+  .planos {
+    padding: 6rem 3rem;
+  }
+
+  .planos_grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .plano_card.destaque {
+    transform: none;
+  }
+
+  .download {
+    padding: 4rem 2rem;
+    gap: 2rem;
+  }
+
+  .download_img {
+    width: 700px;
+  }
+
+  .download_texto {
+    max-width: 340px;
+  }
+
+  .dispositivos_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .dispositivo_card img {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1rem;
+  }
+
+  .navbar img {
+    height: 28px;
+  }
+
+  .btn-entrar {
+    padding: 0.45rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 7rem 1.5rem 4rem;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+  }
+
+  .hero_content {
+    max-width: 100%;
+  }
+
+  .hero_logo img {
+    width: 170px;
+  }
+
+  .hero_subtitle {
+    font-size: 1rem;
+  }
+
+  .hero_buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .card-combo {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .combomais {
+    height: 80px;
+  }
+
+  .correcao-altura {
+    height: 32px;
+    margin-top: 20px;
+  }
+
+  .catalogo {
+    padding: 3rem 1rem;
+  }
+
+  .catalogo_tabs {
+    flex-wrap: wrap;
+  }
+
+  .catalogo_grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .catalogo_item:first-child {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    aspect-ratio: 16/9;
+  }
+
+  .planos {
+    padding: 4rem 1rem;
+  }
+
+  .planos_titulo,
+  .dispositivos_titulo,
+  .faq_titulo {
+    font-size: 1.9rem;
+  }
+
+  .download {
+    position: relative;
+    padding: 0;
+    display: block;
+  }
+
+  .download_img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .download_texto {
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 2rem;
+    max-width: none;
+  }
+
+  .download_texto h2 {
+    font-size: 1.8rem;
+  }
+
+  .download_texto p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .dispositivos {
+    padding: 4rem 1rem;
+  }
+
+  .dispositivos_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dispositivo_card img {
+    width: 180px;
+  }
+
+  .faq {
+    padding: 4rem 1rem;
+  }
+
+  .faq_pergunta {
+    font-size: 1rem;
+    padding: 1.1rem 1rem;
+  }
+
+  .footer {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .footer_logo img {
+    width: 180px;
+    margin-bottom: 2rem;
+  }
+
+  .footer_links {
+    gap: 0.8rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 6.5rem 1rem 3rem;
+  }
+
+  .hero_logo img {
+    width: 150px;
+  }
+
+  .hero_subtitle {
+    font-size: 0.9rem;
+  }
+
+  .link-assinar {
+    font-size: 1rem;
+  }
+
+  .btn,
+  .plano_btn {
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .catalogo_tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
+  .catalogo_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalogo_item:first-child {
+    grid-column: auto;
+  }
+
+  .planos_titulo,
+  .dispositivos_titulo,
+  .faq_titulo,
+  .download_texto h2 {
+    font-size: 1.6rem;
+  }
+
+  .plano_card {
+    min-height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .plano_card h3 {
+    font-size: 1.6rem;
+  }
+
+  .plano_logo {
+    max-width: 150px;
+  }
+
+  .plano_logo_dan {
+    max-width: 240px;
+  }
+
+  .plano_logo_combomais {
+    max-height: 90px;
+  }
+
+  .download_texto {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .download_texto p {
+    font-size: 0.95rem;
+  }
+
+  .dispositivos_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dispositivo_card img {
+    width: 150px;
+  }
+
+  .faq_item {
+    margin-bottom: 0.8rem;
+  }
+
+  .footer_links {
+    flex-direction: column;
+  }
+
+  .footer_redes {
+    flex-wrap: wrap;
+  }
+}
