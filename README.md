@@ -10,6 +10,7 @@ Uma experiência de streaming inspirada nas maiores plataformas do mercado, unin
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobeillustrator&logoColor=white">
   <img src="https://img.shields.io/badge/Streaming%20UI-001F3F?style=for-the-badge">
 </p>
 
@@ -33,15 +34,28 @@ Toda a construção visual foi planejada para transmitir:
 
 ## Design & Conceito
 
-O conceito visual do projeto foi desenvolvido tomando como referência os serviços de streaming mais populares da atualidade, explorando o uso de banners cinematográficos, cards interativos e uma paleta de cores escura que valoriza o conteúdo audiovisual.
+Além do desenvolvimento Front-end, um dos principais diferenciais deste projeto foi a criação da identidade visual da plataforma.
+
+A marca **Aurora+** foi concebida desde o início para transmitir modernidade, entretenimento e tecnologia, características presentes nas principais plataformas de streaming do mercado. A criação da logo envolveu estudos de composição, contraste, legibilidade e reconhecimento visual, buscando uma identidade forte e memorável para a aplicação.
+
+Todo o processo de design foi desenvolvido utilizando o **Adobe Illustrator**, ferramenta empregada para:
+
+- Desenvolvimento da logo Aurora+
+- Construção da identidade visual da plataforma
+- Vetorização e refinamento dos elementos gráficos
+- Definição da paleta de cores
+- Estudos de composição visual e branding
+- Criação de materiais gráficos para a interface
 
 A proposta foi unir:
 
-- Design focado em entretenimento
-- Interface inspirada em plataformas de streaming
-- Organização visual limpa
-- Experiência responsiva
-- Destaque para conteúdo multimídia
+- Branding moderno
+- Design minimalista
+- Experiência cinematográfica
+- Interface inspirada em serviços de streaming
+- Responsividade e usabilidade
+
+O resultado é uma plataforma visualmente consistente, capaz de transmitir profissionalismo e reforçar a proposta de um catálogo premium de entretenimento digital.
 
 ---
 
